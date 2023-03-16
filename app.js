@@ -53,13 +53,21 @@ function renderTodoList() {
     deleteBtn.textContent = 'Delete'
     deleteBtn.classList.add('delete-btn')
     deleteBtn.setAttribute('data-index', i)
+    listItem.classList.add('todo-item')
 
     editBtn.addEventListener('click', editItemModal)
     deleteBtn.addEventListener('click', deleteItem)
 
-    listItem.appendChild(itemText)
-    listItem.appendChild(editBtn)
-    listItem.appendChild(deleteBtn)
+    const firstDiv = document.createElement('div')
+    const secondDiv = document.createElement('div')
+    firstDiv.appendChild(itemText)
+    secondDiv.appendChild(editBtn)
+    secondDiv.appendChild(deleteBtn)
+    listItem.appendChild(firstDiv)
+    listItem.appendChild(secondDiv)
+    // listItem.appendChild(itemText)
+    // listItem.appendChild(editBtn)
+    // listItem.appendChild(deleteBtn)
     todoList.appendChild(listItem)
   }
 }

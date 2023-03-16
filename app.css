@@ -61,12 +61,12 @@ h1 {
 }
 
 #add-btn {
-  color: var(--pink);
-  font-size: 1.24rem;
-  font-weight: 700;
+  color: var(--light);
+  font-size: 1.2rem;
+  font-weight: 500;
   background-image: linear-gradient(to right, var(--pink), var(--purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  border-radius: 1rem;
+  padding: 0.8rem;
   cursor: pointer;
   transition: 0.4s;
   appearance: none;
@@ -105,6 +105,14 @@ h3 {
   display: inline-block;
 } */
 
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
 /* Style the edit and delete buttons */
 .edit-btn {
   cursor: pointer;
@@ -123,7 +131,7 @@ h3 {
 
 .delete-btn {
   cursor: pointer;
-  margin-left: 4.5rem;
+  margin-left: 1.5rem;
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
